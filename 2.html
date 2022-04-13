@@ -16,14 +16,30 @@
         </script>
         <meta charset="UTF-8">
         <title>임호성</title>
-        
-        <link rel="stylesheet" href="style.css" />
+
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <h1>
             <a href="index.html">WEB _ 임호성</a>
         </h1>
-        
+
+        <input
+            type="button"
+            value="night"
+            onclick="
+        var target = document.querySelector('body');
+      if(this.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color= 'white';
+        this.value = 'day';
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color= 'black';
+        this.value = 'night';
+      }
+      ">
+
         <div id="grid">
             <ol>
                 <li>
@@ -36,7 +52,7 @@
                     <a href="3.html">JavaScript</a>
                 </li>
             </ol>
-            
+
             <div id="article">
                 <h2>CSS란 무엇인가?</h2>
 
@@ -63,6 +79,22 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="allowfullscreen"></iframe>
+
+        <input
+            type="button"
+            value="night"
+            onclick="
+        var target2 = document.querySelector('body');
+      if(this.value === 'night') {
+        target2.style.backgroundColor = 'black';
+        target2.style.color= 'white';
+        this.value = 'day';
+      } else {
+        target2.style.backgroundColor = 'white';
+        target2.style.color= 'black';
+        this.value = 'night';
+      }
+      ">
 
         <p>
             <div id="disqus_thread"></div>
